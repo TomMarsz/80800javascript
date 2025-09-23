@@ -8,6 +8,11 @@ body {
   font-family: Arial, sans-serif;
   background-color: #171717;
   color: #ffffff;
+}
+
+.todo-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -20,3 +25,23 @@ p {
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
+/* Tablet (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+/* Small Desktop (1024px a 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Estilos para desktops más pequeños */
+}
+
+/* Full Desktop (1440px y más) */
+@media (min-width: 1440px) {
+  /* Estilos para pantallas grandes */
+}
+
+
+
+
+
