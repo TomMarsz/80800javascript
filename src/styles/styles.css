@@ -5,47 +5,243 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #171717;
-  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
 .todo-container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-.todo-header, .todo-main {
+/* Header */
+.todo-header {
+  text-align: center;
   margin-bottom: 3rem;
 }
 
 h1 {
-  color: #007acc;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
 }
 
-p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
+.todo-header p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin: 0;
 }
 
-/* Tablet (768px a 1023px) */
+/* Input Section */
+.todo-input-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#todoInput:focus {
+  border-color: #3498db;
+}
+
+#todoInput::placeholder {
+  color: #bdc3c7;
+}
+
+#todoAddBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#todoAddBtn:hover {
+  background-color: #2980b9;
+}
+
+/* Task Lists */
+.todo-lists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.todo-list-section {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e1e8ed;
+  overflow: hidden;
+}
+
+.todo-list-section h2 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+/* Table */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.task-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #f1f3f4;
+  vertical-align: middle;
+}
+
+.task-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.task-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Completed tasks */
+.completed-task {
+  color: #95a5a6;
+}
+
+.completed-task td:nth-child(2) {
+  text-decoration: line-through;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: opacity 0.2s;
+  background: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-edit {
+  color: #f39c12;
+}
+
+.btn-delete {
+  color: #e74c3c;
+}
+
+.btn-complete {
+  color: #27ae60;
+}
+
+.btn-restore {
+  color: #3498db;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #95a5a6;
+}
+
+.empty-state h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #7f8c8d;
+}
+
+.empty-state p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .todo-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .todo-input-section {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .todo-lists-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tablets */
+  .todo-container {
+    padding: 1.5rem;
+  }
 }
 
-/* Small Desktop (1024px a 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  /* Estilos para desktops más pequeños */
-}
-
-/* Full Desktop (1440px y más) */
 @media (min-width: 1440px) {
-  /* Estilos para pantallas grandes */
+  .todo-container {
+    max-width: 900px;
+    padding: 3rem 1rem;
+  }
 }
-
-
-
-
-

@@ -94,7 +94,7 @@ function renderTodoList(todoTaskList) {
         <tr>
           <th>ID</th>
           <th>Title</th>
-          <th>Actions</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -147,7 +147,7 @@ function renderCompletedList(completedTaskList) {
         <tr>
           <th>ID</th>
           <th>Title</th>
-          <th>Actions</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
