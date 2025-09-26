@@ -1,52 +1,58 @@
-# 80800javascript
+# 📝 Minimalist TODO App
 
-## Estructura del simulador
+A clean, minimalist task management application built with vanilla JavaScript, featuring dark mode design and local storage persistence.
 
-### Objetivos generales
+## 📂 Project Structure
 
-* Armar la estructura base del simulador
-* Integrar las herramientas JS aprendidas hasta aquí
+```
+todo-app/
+│
+├── index.html          # Main HTML file
+├── styles.css          # Minimalist light theme styles
+├── script.js           # Main application logic
+└── README.md           # Project documentation
+```
 
-#### Objetivos específicos
+## 🛠️ Technology Stack
 
-* Declara variables, constantes y arrays
-* Crea una o más funciones JS que generen interacción
-* Agrega los ciclos de iteración y/o condicionales necesarios, para que tu proyecto funcione correctamente
-* Integra el uso de la Consola JS y de los cuadros de diálogo Prompt, Confirm y Alert
+- **HTML5**: Semantic markup structure
+- **CSS3**: Minimalist dark theme with responsive design
+- **Vanilla JavaScript**: Pure JS without frameworks
+- **LocalStorage API**: Browser-based data persistence
 
-#### Se debe entregar
+## 💡 Usage
 
-* Documento HTML (al menos uno)
-* Archivo JS referenciado en el HTML
+### Adding Tasks
 
-#### Formato
+1. Type your task in the input field
+2. Click "Add Task" or press Enter
+3. Task appears in the "Pending Tasks" list
 
-* Archivo en formato .ZIP con la carpeta y los archivos del proyecto. Debe contener el nombre “Entregable1+Apellido”
-* Si usas más de un archivo JS y más de un archivo CSS, guarda los mismos en subcarpetas
+### Managing Tasks
 
-#### Sugerencias
+- **✏️ Edit**: Click the edit button to modify task text
+- **🗑️ Delete**: Click delete button (with confirmation prompt)
+- **✅ Complete**: Mark task as completed (moves to completed list)
+- **↩️ Restore**: Move completed task back to pending list
 
-* En esta etapa ocúpate de realizar la mejor lógica de JS. No te esmeres en el diseño web
-* No debes integrar todos los condicionales ni todos ciclos de iteración aprendidos. Solo aquellos que le aporten valor a la lógica de tu aplicación
-* La interacción del simulador se hará íntegramente sobre la Consola JS
-* Describe en el documento HTML con uno o dos párrafos, la idea general de tu simulador
-* Crea al menos 3 funciones siguiendo el algoritmo básico de todo programa (entradas de datos, procesamiento de datos y mostrar los resultado de salida de los mismos.)
-* Realizar llamadas(invocar) a las funciones que utilizaste en tu simulador
-* Tu proyecto mutará cuando aprendas más características de JS. Lo que no puedas conseguir ahora, emúlalo de la mejor forma posible con variables, constantes y/o arrays
-* Define mensajes claros a mostrar en los cuadros de diálogo. Concatena textos con variables, y realiza saltos de línea en textos extensos. Esto facilitará su lectura <---------------> ## Criterios de evaluación
+## 🤝 Contributing
 
-## Estructura HTML y archivo JS
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-La estructura HTML está completa y ejecutada con buenas prácticas o utiliza el el starter template de Bootstrap u otro framework para el uso adecuado de HTML5 *. El archivo JS está correctamente referenciado en el HTML.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Algoritmos
+## 📄 License
 
-Se utiliza algoritmo condicional y con ciclo (IF, bucles for) de manera óptima , reflejando lo aprendido en clase.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Funciones
+## 👨‍💻 Author
 
-Los nombres de las funciones son claros y dan a entender que acción realizan. Se emplea la estructura correcta para el armado de las mismas. Crea funciones dinámicas de manera correcta. Generan un resultado correcto cuando se ejecutan.
+**Tomás Mársico** - [TomMarsz](https://github.com/TomMarsz)
 
-### Aclaración
+---
 
-Pueden utilizar el starter template de Bootstrap para agilizar el armado de la esrtuctura HTML en caso de que lo deseen. O pueden optar por aplicar JS a sus HTML desarollados por los propios estudiantes (ya sea en otros cursos o para este proyecto).
+**Enjoy organizing your tasks with this minimalist TODO app! 🎉**
